@@ -50,6 +50,7 @@ const InfoTrip = () => {
   useEffect(() => {
     getDataVuelos().then((response) => {
       console.log(localInfo);
+      console.log(response);
       if (Object.entries(localInfo).lenght !== 0) {
         const vuelosS = response.filter(
           (vuelo) =>
