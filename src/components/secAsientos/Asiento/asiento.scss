@@ -1,0 +1,63 @@
+@import "../../../vars.scss";
+
+.icon_Asiento {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.disponible {
+  border: 3px solid $MainColor;
+  border-radius: 5px;
+  background-color: $White;
+  transition: 0.5 linear;
+  &:hover {
+    background: $MainColor;
+    cursor: pointer;
+    transition: 0.5;
+  }
+}
+
+.ocupado {
+  @extend .disponible;
+  background-color: $Grayasientos;
+  border: 3px solid $Grayasientos;
+  cursor: not-allowed;
+}
+
+.headerFilas {
+  @extend .disponible;
+  background-color: $White;
+  border: 3px solid $White;
+  &:hover {
+    background: $White;
+    cursor: pointer;
+    transition: 0.5;
+    cursor: auto;
+  }
+}
+
+.seleccion {
+  @extend .disponible;
+  color: $White;
+  background-color: $MainColor;
+  border: 3px solid $MainColor;
+}
+
+@media (min-width: 768px) {
+  .icon_Asiento {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  .icon_Asiento {
+    width: 45px;
+    height: 45px;
+  }
+}

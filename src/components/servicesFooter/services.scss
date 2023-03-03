@@ -1,0 +1,74 @@
+@import "../../vars.scss";
+.services {
+  margin: 50px 0;
+  h1 {
+    text-align: center;
+    font-size: 25px;
+  }
+  &__container {
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+.services__container{
+  padding-bottom: 20px;
+}
+.services__elem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  gap: 20px;
+  height: 220px;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 5px 5px 5px rgb(0 0 0 / 19%);
+}
+.services__icons{
+  background-color: $MainColor;
+  color: $White;
+  border-radius: 50%;
+  padding: 20px;
+}
+.services__h2 {
+  font-size: 24px;
+}
+.services__p {
+  text-align: center;
+  color: $GrayFont;
+}
+
+@media (min-width: 768px) {
+  .services {
+    margin-bottom: 30px;
+    h1 {
+      text-align: left;
+      font-size: 25px;
+      margin-bottom: 30px;
+      padding-left: 5%;
+    }
+  }
+  .services__container {
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  .services__elem {
+    width: 200px;
+    height: 200px;
+    padding: 40px;
+  }
+  .services__h2 {
+    font-size: 1rem;
+  }
+  .services__p {
+    font-size: 13px;
+  }
+}

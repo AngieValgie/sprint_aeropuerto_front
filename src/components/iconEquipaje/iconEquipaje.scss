@@ -1,0 +1,40 @@
+@import "../../vars.scss";
+
+.IconEquipaje {
+  border: 1px solid $GrayBackModal;
+  width: 100px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 5px;
+  gap: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+
+  figcaption {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    p {
+      font-weight: 300;
+      font-size: 14px;
+    }
+  }
+}
+
+.active {
+  @extend .IconEquipaje;
+  background-color: $MainColor;
+  color: $White;
+  border: 1px solid $MainColor;
+}
+
+@media (min-width: 768px) {
+  .IconEquipaje {
+    width: 150px;
+    height: 100px;
+  }
+}

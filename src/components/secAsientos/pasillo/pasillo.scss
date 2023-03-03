@@ -1,0 +1,13 @@
+@import "../../../vars.scss";
+.secPasillo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  &__pasillo {
+    width: 100%;
+    background-color: $White;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+}

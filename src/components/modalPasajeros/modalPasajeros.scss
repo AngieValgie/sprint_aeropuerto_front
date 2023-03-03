@@ -1,0 +1,76 @@
+@import "../../Vars.scss";
+.ModalPasajeros {
+  width: 300px;
+  height: 100px;
+  background-color: $White;
+  border-radius: 0 0 10px 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+  gap: 10px;
+
+  figure {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    height: 20px;
+  }
+
+  .dflexSec {
+    display: flex;
+    justify-content: space-between;
+    figure {
+      span {
+        align-self: flex-end;
+      }
+    }
+  }
+  .textTitles {
+    font-size: 1rem;
+  }
+  .textDescription {
+    font-size: 13px;
+  }
+  .SecAdultos {
+    flex-grow: 1;
+    width: 50%;
+  }
+  .SecNiños {
+    flex-grow: 1;
+    width: 50%;
+  }
+  .Secbb {
+    flex-grow: 1;
+    width: 50%;
+  }
+  .Secbuttons {
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid $GrayBackModal;
+    align-items: center;
+    flex-grow: 1;
+    height: 30px;
+    width: 50%;
+    button {
+      width: 100%;
+      font-size: 20px;
+      height: inherit;
+      background: transparent;
+      border: none;
+      color: $MainColor;
+      transition: 0.5s;
+      &:hover {
+        color: $Black;
+        transition: 0.5s;
+        cursor: pointer;
+      }
+    }
+    p {
+      width: 50%;
+      text-align: center;
+    }
+  }
+}
